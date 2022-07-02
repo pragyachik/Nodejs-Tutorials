@@ -1,0 +1,3 @@
+[submodule "nft-art-generator"]
+	path = nft-art-generator
+	url = https://github.com/fireship-io/nft-art-generator
