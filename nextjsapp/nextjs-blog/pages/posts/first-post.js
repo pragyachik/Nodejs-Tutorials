@@ -25,7 +25,7 @@ export default function FirstPost() {
                       .title {
                         margin: 0;
                         line-height: 1.15;
-                        font-size: 4rem;
+                        font-size: 1rem;
                       }
                 `}
             </style>
