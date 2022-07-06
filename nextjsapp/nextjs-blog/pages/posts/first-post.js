@@ -12,7 +12,7 @@ export default function FirstPost() {
             <style jsx>
                 {`
                     .title a {
-                        color: #0070f3;
+                        color: orange;
                         text-decoration: none;
                       }
               
