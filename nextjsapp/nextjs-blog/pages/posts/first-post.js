@@ -3,6 +3,9 @@ import Link from "next/link";
 export default function FirstPost() {
     return (
         <>
+            <h1 className="text-3xl font-bold underline">
+            Hello world!
+            </h1>
             <h1>First Post</h1>
             <h2 className="title">
                 <Link href="/">
@@ -27,6 +30,9 @@ export default function FirstPost() {
                         line-height: 1.15;
                         font-size: 1rem;
                       }
+                    .nav{
+                        background-color:gray;
+                    }
                 `}
             </style>
         </>
