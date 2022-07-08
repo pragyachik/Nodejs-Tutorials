@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function FirstPost() {
     return (
         <>
-            <nav className="container bg-teal-500 drop-shadow-lg h-16 px-6">
+            <nav className="bg-teal-500 drop-shadow-lg h-16">
                 <a>Test</a>
                 <a>Test</a>
                 <a>Test</a>
