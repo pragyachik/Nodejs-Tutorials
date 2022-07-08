@@ -32,10 +32,12 @@ function Body(){
                     </h1>
                 </div>
                 <div>
+                    <center>
                     <p>Welcome to this website! We are testing Tailwind CSS. Please click the button below if you like the site</p>
                     <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
                     Like!
                     </button>
+                    </center>
                 </div>
                 <div>
                     -{` `}Developer P
