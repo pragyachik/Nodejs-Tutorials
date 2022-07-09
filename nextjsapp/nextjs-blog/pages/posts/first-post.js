@@ -44,33 +44,33 @@ function Body(){
                 </div>
             </div>
             <center>
-            <table class="table-auto">
-  <thead>
-    <tr>
-      <th>M</th>
-      <th>O</th>
-      <th>M</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>fruit</td>
-      <td>apple</td>
-      <td>pinapple</td>
-    </tr>
-    <tr>
-      <td>bed</td>
-      <td>sofa</td>
-      <td>chair</td>
-    </tr>
-    <tr>
-      <td>biryani</td>
-      <td>kebab</td>
-      <td>pizza</td>
-    </tr>
-  </tbody>
-</table>
-</center>
+            <table className="table-auto border-slate-300">
+                <thead>
+                    <tr>
+                    <th>M</th>
+                    <th>O</th>
+                    <th>M</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>fruit</td>
+                    <td>apple</td>
+                    <td>pinapple</td>
+                    </tr>
+                    <tr>
+                    <td>bed</td>
+                    <td>sofa</td>
+                    <td>chair</td>
+                    </tr>
+                    <tr>
+                    <td>biryani</td>
+                    <td>kebab</td>
+                    <td>pizza</td>
+                    </tr>
+                </tbody>
+            </table>
+            </center>
 
         </>
     )
