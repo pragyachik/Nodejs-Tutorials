@@ -2,7 +2,7 @@ const express = require('express');
 const {readFile} = require('fs');
 const app = express();
 
-app.get('/foo/m', (request,response)=>{
+app.get('/', (request,response)=>{
     readFile('./home.html','utf-8',(err,txt)=>{
         if(err){
             response.status(500).send('Sorry server is trash');
