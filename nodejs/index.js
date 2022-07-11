@@ -1,17 +1,72 @@
+const { response } = require('express');
 const express = require('express');
-const {readFile} = require('fs');
 const app = express();
 
-app.get('/', (request,response)=>{
-    readFile('./home.html','utf-8',(err,txt)=>{
-        if(err){
-            response.status(500).send('Sorry server is trash');
-        }
-        response.send(txt)
-    })
+app.set('view engine','ejs')
+
+app.get('/', (req,res)=>{
+    // res.send("<p>Good Evening M</p>")
+    //res.sendFile('./views/home.html',{root:__dirname})
+    res.render('home')
 });
 
-app.listen(process.env.PORT || 3000, ()=>{console.log('App running on http://localhost:3000')})
+app.get('/about', (req,res)=>{
+    // res.sendFile('./views/about.html',{root:__dirname})
+    res.render('about',{title:'about page'})
+})
+
+app.get('/aboutus',(req,res)=>{
+    res.redirect('/about')
+})
+
+app.use((req,res)=>{
+    // res.status(301).sendFile('views/404.html',{root:__dirname})
+    res.render('404')
+})
+app.listen(4000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-----------------------------------------------------------------------------
+
+// const http = require('http');
+
+// const server = http.createServer((req, res)=>{
+//     console.log('request made');
+//     console.log(req);
+// })
+
+// server.listen(4000, 'localhost', () => {
+//     console.log('listening for requests on port 4000');
+// })
+
+
+
+// const express = require('express');
+// const {readFile} = require('fs');
+// const app = express();
+
+// app.get('/', (request,response)=>{
+//     readFile('./home.html','utf-8',(err,txt)=>{
+//         if(err){
+//             response.status(500).send('Sorry server is trash');
+//         }
+//         response.send(txt)
+//     })
+// });
+
+// app.listen(process.env.PORT || 3000, ()=>{console.log('App running on http://localhost:3000')})
 
 
 
