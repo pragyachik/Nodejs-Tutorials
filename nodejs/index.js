@@ -5,9 +5,15 @@ const app = express();
 app.set('view engine','ejs')
 
 app.get('/', (req,res)=>{
+    var posts = [
+        {title:'blog',content:'visit to the FOREST',date:'14th august 1912'},
+        {title:'blog2',content:'visit to the FOREST',date:'14th august 1912'},
+        {title:'blog3',content:'visit to the FOREST',date:'14th august 1912'}
+
+    ]
     // res.send("<p>Good Evening M</p>")
     //res.sendFile('./views/home.html',{root:__dirname})
-    res.render('home',{title:'Home'})
+    res.render('home',{title:'Home',posts})
 });
 
 app.get('/about', (req,res)=>{
