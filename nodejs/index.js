@@ -2,7 +2,14 @@ const { response } = require('express');
 const express = require('express');
 const app = express();
 
+
 app.set('view engine','ejs')
+
+app.listen(4000);
+
+
+app.use(express.static('public'))
+
 
 app.get('/', (req,res)=>{
     var posts = [
@@ -29,7 +36,6 @@ app.use((req,res)=>{
     // res.status(301).sendFile('views/404.html',{root:__dirname})
     res.render('404',{title:'404'})
 })
-app.listen(4000);
 
 
 
