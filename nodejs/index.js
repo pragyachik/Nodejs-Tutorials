@@ -1,5 +1,12 @@
 const { response } = require('express');
 const express = require('express');
+const mongoose = require('mongoose')
+
+// mongoose.connect("mongodb://localhost:4000/subscribers", { useNewUrlParser: true})
+// const db = mongoose.connection
+// db.on('error',(error)=>{console.log(error)})
+// db.once('open',()=>{console.log('Connected to database')})
+
 const app = express();
 
 
